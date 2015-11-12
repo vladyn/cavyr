@@ -1,6 +1,7 @@
 /**
  * Created by vvarbanov on 7.11.2015 г..
  */
+var buttons = document.getElementsByTagName("button");
 
 var boxElement = {
     className: function(className){
@@ -25,5 +26,17 @@ var boxElement = {
         }
     }
 };
+
+for (var p in buttons){
+    var num = parseFloat(p);
+    if(!isNaN(num)){
+        if(buttons[num].id === ''){
+            buttons[num].addEventListener("click", function(event){
+                document.getElementById("targetImg").src = event.target.previousElementSibling.children[0].firstElementChild.src;
+            });
+        }
+    }
+};
+
 
 
