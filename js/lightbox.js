@@ -32,11 +32,13 @@ for (var p in buttons){
     if(!isNaN(num)){
         if(buttons[num].id === ''){
             buttons[num].addEventListener("click", function(event){
-                document.getElementById("targetImg").src = event.target.previousElementSibling.children[0].firstElementChild.src;
+                console.log("some");
+                document.getElementById("targetImg").src = event.target.previousElementSibling.firstElementChild.src;
+                boxElement.show('lightbox-bg');
             });
         }
     }
-};
+}
 
 
 
