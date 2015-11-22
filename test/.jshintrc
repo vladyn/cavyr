@@ -12,7 +12,8 @@
   "undef": true,
   "unused": true,
   "globals": {
-    "angular": false,
-    "inject": false
+    "angular": true,
+    "inject": true,
+    "jquery": true
   }
 }
