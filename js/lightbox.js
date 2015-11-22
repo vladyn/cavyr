@@ -32,8 +32,8 @@ for (var p in buttons){
     if(!isNaN(num)){
         if(buttons[num].id === ''){
             buttons[num].addEventListener("click", function(event){
-                console.log("some");
                 document.getElementById("targetImg").src = event.target.previousElementSibling.firstElementChild.src;
+                document.getElementById("brand").textContent = event.target.previousElementSibling.children[0].alt;
                 boxElement.show('lightbox-bg');
             });
         }
