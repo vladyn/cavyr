@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <title>Добре дошли в Cavyr - онлайн магазин за компютри</title>
+    <link rel="stylesheet" href="styles/cavyr.css">
+</head>
+
+<body>
+    <h3>здравейте</h3>
+    <h1>Добре дошли в CAVYR компютри</h1>
+    <p>CAVYR компютри ви предлага:</p>
+    <ul>
+        <li>Настолни Компютри</li>
+        <li>Преносими Компютри</li>
+    </ul>nikola vladimirov varbanov
+    <a href="http://google.com/">връщане към chrome</a>
+    <pre>lenovo</pre>
+    <figure>
+        <img src="images/lenovo.jpg" alt="lenovo">
+        <caption>lenovo</caption>
+    </figure>
+    <button>поръчай lenovo сега</button>
+    <pre>acer</pre>
+    <figure>
+        <img src="images/acer.jpg" alt="acer">
+        <caption>acer</caption>
+    </figure>
+    <button >поръчай acer сега</button>
+    <pre>PHILIPS</pre>
+    <figure>
+        <img src="images/philips.jpg" alt="philips">
+        <caption>PHILIPS</caption>
+    </figure>
+    <button>поръчай Philips сега</button>
+    <pre>LG</pre>
+    <figure>
+        <img src="images/lg.jpg" alt="lg">
+        <caption>LG</caption>
+    </figure>
+    <button>поръчай LG сега</button>
+    <pre>HP</pre>
+    <figure>
+        <img src="images/hp_333.jpg" alt="hp">
+        <caption>hp</caption>
+    </figure>
+    <button>поръчай hp сега</button>
+    <pre>всичко от техномаркет</pre>
+    <button>поръчай всичко</button>
+    <pre>довиждане</pre>
+    <div class="code">
+        <h2>Моля, въведете кода за отстъпка</h2>
+        <span class="code">
+            0976524
+        </span>
+        <input type="text" placeholder="код за отстъпка" id="code">
+        <input type="button" value="Изпрати" onclick="checkCode(document.getElementById('code').value)">
+        <div class="messages">
+            <div class="message success hide">верен код</div>
+            <div class="message error hide">грешен код</div>
+        </div>
+    </div>
+    <div class="lightbox-bg hide"><!-- add hide here -->
+        <div class="lightbox">
+            <div class="image">
+                <img src="images/acer.jpg" id="targetImg" alt="computer Acer">
+            </div>
+            <div class="content">
+                <h3>Компютър Acer</h3>
+                <p>Поръчйте този продукт и спечелете....</p>
+                <div class="form split-to-2">
+                    <div class="left">
+                        <button id="cancel" onclick="boxElement.hide('lightbox-bg')">Откажи</button>
+                    </div>
+                    <div class="right">
+                        <button id="confirm">Потвърди покупката</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/promocode.js" type="text/javascript"></script>
+    <script src="js/lightbox.js" type="text/javascript"></script>
+</body>
+
+</html>
