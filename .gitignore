@@ -1,15 +1,11 @@
-/.idea
-.idea
+.idea/*
 /node_modules
 /dist
 /.tmp
 /.sass-cache
 /bower_components
-<<<<<<< HEAD
 .idea/workspace.xml
-=======
 /app/bower_components
 .cashe
 .sublime-workspace
 .sublime*
->>>>>>> 188ad90d197fcb7f04e682b758d7409e216ba8fd
