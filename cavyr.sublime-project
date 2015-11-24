@@ -1,0 +1,20 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				".map",
+				"*.cache"
+			],
+			"folder_exclude_patterns":
+			[
+				"node_modules",
+				".sass-cache",
+				".idea"
+			],
+			"name": "Cavyr",
+			"path": "."
+		}
+	]
+}
