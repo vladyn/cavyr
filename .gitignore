@@ -5,6 +5,7 @@
 /.tmp
 /.sass-cache
 /bower_components
+/app/bower_components
 .cashe
 .sublime-workspace
 .sublime*
