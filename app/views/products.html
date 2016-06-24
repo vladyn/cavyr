@@ -1,3 +1,9 @@
 <div class="row">
     <h1>Products</h1>
+  <div class="list-group">
+    <a href="#" ng-repeat="product in prod.products" class="list-group-item" ng-class="{'active': $index === 0}">
+      <h4 class="list-group-item-heading">{{ product.name }}</h4>
+      <p class="list-group-item-text">{{ product.type }}</p>
+    </a>
+  </div>
 </div>
