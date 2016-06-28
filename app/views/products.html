@@ -4,6 +4,10 @@
     <a href="#" ng-repeat="product in prod.products" class="list-group-item" ng-class="{'active': $index === 0}">
       <h4 class="list-group-item-heading">{{ product.name }}</h4>
       <p class="list-group-item-text">{{ product.type }}</p>
+      <figure>
+      	<img src="" ng-src="{{ product.image }}" alt="{{ product.name }}">
+      	<figcaption>{{ product.type }}</figcaption>
+      </figure>
     </a>
   </div>
 </div>
