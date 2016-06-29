@@ -8,10 +8,16 @@
  * Controller of the cavyrApp
  */
 angular.module('cavyrApp')
-  .controller('MainCtrl', function () {
+  .controller('MainCtrl', function (navService) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
+
+    this.active = false;
+
+    navService.getPosition();
+
   });
+
