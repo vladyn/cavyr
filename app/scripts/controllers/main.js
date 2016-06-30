@@ -15,12 +15,9 @@ angular.module('cavyrApp')
       'Karma'
     ];
 
-    $scope.that = this.active = navService.getPosition();
-
-    $scope.$on('$locationChangeSuccess', function(){
-	    $scope.that = navService.getPosition();
+    $scope.$on('$locationChangeSuccess', function () {
+	    $scope.active = navService.getPosition();
     });
-
 
   }]);
 
