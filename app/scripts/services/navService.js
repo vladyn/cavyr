@@ -6,10 +6,28 @@
 */
 
 angular.module('cavyrApp')
-	.factory('navService', function ($routeProvider, $location) {
+	.factory('navService', function ($location) {
 		function getPosition() {
-			console.log($routeProvider);
-			console.log($location);
+			var current = $location.url(),
+				active = null;
+
+				switch (current) {
+					case '/':
+					active = 'home';
+					break;
+					case '/products':
+					active = 'products';
+					break;
+					case '/about':
+					active = 'about';
+					break;
+					case '/contact':
+					active = 'contact';
+					break;
+				}
+
+				return active;
+
 		}
 	
 		return {

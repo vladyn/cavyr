@@ -8,16 +8,19 @@
  * Controller of the cavyrApp
  */
 angular.module('cavyrApp')
-  .controller('MainCtrl', function (navService) {
+  .controller('MainCtrl', ['navService', '$location', '$scope', function (navService, $location, $scope) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
 
-    this.active = false;
+    $scope.that = this.active = navService.getPosition();
 
-    navService.getPosition();
+    $scope.$on('$locationChangeSuccess', function(){
+	    $scope.that = navService.getPosition();
+    });
 
-  });
+
+  }]);
 
